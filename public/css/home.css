@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+    font-size: 12px;
+}
+
+button:hover {
+    color: rgb(243, 59, 59);
+}
+
+.category-btn,
+.start-btn {
+    border: none;
+    background: rgb(63, 204, 192);
+    color: whitesmoke;
+    padding: 10px 30px;
+    border-radius: 7px;
+    font-size: 1.4rem;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+header{
+    background-color: rgb(63, 204,192);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #e4e712;
+    font-size: 30px;
+    font-family: 'Oxygen', sans-serif;
+        display: inline-block;
+}
+
+.top-nav {
+    margin-top: 9px;
+    float: right;
+    display: inline-block;
+}
+
+.nav-link {
+    font-size: 18px;
+    padding: 0 6px;
+    border: none;
+    margin-right: 10px;
+}
+
+.signout {
+    background: none;
+    border-radius: 50%;
+    color: #e4e712
+}
+
+.signout:hover{
+    transform: translateY(-2px);
+    background-color: #E71353;
+    border: none;
+}
+
+.signout:active{
+    transform: translateY(4px);
+    transition: 0.1s ease;
+    outline-color: #E71353;
+    border: none;
+}
+/*--End of Header Styling--*/
+
+.intro{
+    margin-top: 110px;
+}
+
+.center{
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+     align-items: center;
+    justify-content: center;
+}
+
+fieldset {
+    border: 0 none;
+    margin-right: auto;
+    margin-left: auto;
+}
+.box1{
+    height: 100vh;
+    width: 100%;
+    background-image: url("http://sf.co.ua/13/07/wallpaper-2937746.jpg");
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+
+.js-meeting-points {
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 3px;
+    padding-left: 33%;
+    background-color: #eee;
+    opacity: 0.9;
+    padding-top: 10px;
+}
+form {
+    text-align: center;
+    width: 400px;
+    margin: 20px auto auto auto;
+    position: relative;
+    padding: 40px;
+}
+
+fieldset {
+    border: none;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+form legend {
+    font-size: 30px;
+}
+
+.js-checkIn,
+.js-query {
+    height: 50px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid steelblue;
+    margin-bottom: 5px;
+}
+
+
+.results {
+    font-size: 20px;
+    height: 80px;
+    background-color: antiquewhite;
+    z-index: 2;
+    width: 50%;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+a {
+    display: block;
+}
+
+.js-result-address,
+.js-result-category {
+    color: #606466;
+    font-size: 12px;
+}
+
+.categoryLink:hover {
+    color: blue;
+}
+
+categorySearch {
+    display: inline;
+}
+
+.checkIn-btn,
+.create-user-btn,
+.login-btn {
+    font-family: 'Anton', sans-serif;
+    color: #111111;
+    width: 50%;
+    background: #eee;
+    height: 60px;
+    text-align: center;
+    line-height: 50px;
+    text-transform: uppercase;
+    transition: 0.4s ease;
+    font-size: 22px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px rgba(192,192,192,0.3);
+    outline-color: #D5FF44;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.checkIn-btn:hover,
+.create-user-btn:hover,
+.login-btn:hover {
+    transform: translateY(-3px);
+    outline-color: #D5FF44;
+    color: rgb(4, 250, 4);
+}
+.checkIn-btn:active,
+.create-account-btn:active,
+.login-btn:active {
+    transform: translateY(4px);
+    transition: 0.1s ease;
+    outline-color: #D5FF44;
+}
