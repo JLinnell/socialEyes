@@ -1,0 +1,9 @@
+language: node_js
+node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: cb7f4792-9609-4fe4-9e13-096a6cd48712
+  app: 
+  on:
+    repo: JLinnell/hobbeet
