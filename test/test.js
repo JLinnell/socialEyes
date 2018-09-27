@@ -73,7 +73,7 @@ describe('meetingPoint', function () {
         tearDownDb();
         return closeServer();
     });
-    it('should create one meeting point', function () {
+    /*it('should create one meeting point', function () {
         return chai.request(app)
             .post(`/meetingPoint/create/${token}`)
             .send({category: "tester", 
@@ -85,7 +85,7 @@ describe('meetingPoint', function () {
             .catch((error) => {
                 console.log(error);
             });
-    });
+    });*/
     it('should list meeting points on GET', function () {
         return chai.request(app)
             .get(`/meetingPoint/all/${token}`)
