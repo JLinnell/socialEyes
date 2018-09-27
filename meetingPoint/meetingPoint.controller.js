@@ -75,8 +75,9 @@ exports.deleteSelectedPoint = (req, res) => {
     })
 }
 
-exports.findByTitle = (req, res) => {
-    meetingPointModel.find({title:  new RegExp(req.params.searchQueryText, "i")})
+exports.findByCategory = (req, res) => {
+    console.log(req.params.searchQueryText);
+    meetingPointModel.find({category:  new RegExp(req.params.searchQueryText, "i")})
         .then((meetingPoint) => {
             res.status(200).json({
                 message: "Search query fetched successfully!",

@@ -14,6 +14,6 @@ router.get('/fetchAllByUser/:id/:token', middleware.verifyToken, meetingPointCon
 //delete/:id: delete removes the selected meeting point from the database
 router.delete('/delete/:id', meetingPointController.deleteSelectedPoint);
 
-router.get('/findByTitle/:searchQueryText', meetingPointController.findByCategory);
+router.get('/findByCategory/:searchQueryText', meetingPointController.findByCategory);
 
 module.exports = router;

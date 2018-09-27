@@ -111,7 +111,7 @@ function categorySearch() {
         $.ajax({
             type: "GET",
             contentType: 'application/json',
-            url: `/meetingPoint/findByTitle/${$('.js-query').val()}`,
+            url: `/meetingPoint/findByCategory/${$('.js-query').val()}`,
         })
             .done(function (response) {
                 if (response.data.length === 0) {
@@ -133,14 +133,14 @@ categorySearch();
 function renderNoResults() {
     return(`
         <div class="no-results">
-          <img src="../assets/sadcat.jpg" alt="no results">
-          <p>No results were found with your query, try again.</p>
+        <article class="results">
+          <a><img class="cat-img" src="../assets/sadcat.jpg" alt="no results">
+          <p>No results were found with your query, try again.</p></a></article>
         </div>
     `)
 }
 //TO DO: css for the results
-//TO DO: make responsive
-//TO DO: create repo 
+//TO DO: make responsive 
 function renderCheckins(checkin) {
     return (`
     <div class="meetingPointsList">

@@ -428,10 +428,12 @@ form input {
     font-size: 20px;
     margin: auto;
     padding: 1rem;
-    background-color: antiquewhite;
-    width: 50%;
+    background-color: rgb(236, 221, 202);
+    width: 75%;
     text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    
 }
 
 a {
@@ -457,11 +459,30 @@ a {
     border-radius: 10px;
 }
 
-.no-results img {
-    width: 275px;
+.cat-img {
+    width: 100%;
     border-radius: 50%;
 }
 
 .no-results p {
     font-size: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .no-results {
+        width: 100%;
+}
+.results {
+    width: 100%;
+}
+.js-query {
+    width: 100%;
+}
+.category-btn {
+    width: 100%;
+}
+.start-btn {
+    width: 75%;
+    text-align: center;
+}
 }

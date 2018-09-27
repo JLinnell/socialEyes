@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 
 //create a schema that will hold the mold of the model
 const meetingPointSchema = new mongoose.Schema({
-     address: String,
      category: String,
      description: String,
      title: String,
