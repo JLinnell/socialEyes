@@ -8,8 +8,6 @@ exports.createNew = (req, res) => {
         email: req.body.email,
         password: req.body.password
     });
-    console.log("here I am!");
-    //save user in database
     newUser.save()
         .then((result) => {
             res.status(200).json({

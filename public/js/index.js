@@ -65,7 +65,6 @@ function createUser() {
             .done(function (result) {
                 toastr.success('You\'re all set! Have fun!')
                 $('.input').val("");
-                console.log("aWOOWOOYEAHYEUH!!");
                 closeModal();
             })
     })
@@ -90,7 +89,6 @@ function loginUser() {
             .done(function (result) {
                 toastr.success(`Welcome back, ${result.data.email}!`)
                 $('.input').val("");
-                console.log("aWOOWOOYEAHYEUH!!");
                 localStorage.setItem('token', result.data.token);
                 localStorage.setItem('email', result.data.email);
                 localStorage.setItem('userID', result.data.id);
@@ -118,9 +116,7 @@ function categorySearch() {
                     $(".js-category-results").append(renderNoResults());
                 }
                 toastr.success('You\'re on your way!')
-                console.log(response);
                 for (let i = 0; i < response.data.length; i++) {
-                    console.log(response.data[i]);
                     $(".js-category-results").append(renderCheckins(response.data[i]));
                     $('.js-query').val("");
                 }
@@ -139,14 +135,12 @@ function renderNoResults() {
         </div>
     `)
 }
-//TO DO: css for the results
-//TO DO: make responsive 
+
 function renderCheckins(checkin) {
     return (`
     <div class="meetingPointsList">
         <article class="results">
         <a class="js-result-name" href="*" target="_blank"><span="description">${checkin.title}</span></a>
-        <a class="js-result-address"><span="description">${checkin.address}</span></a>
         <a class="js-result-category" href="*" target="_blank"><span="description">${checkin.category}</span></a>
         <a class="js-result-description"><span="description">${checkin.description}</span></a></article>
     </div>`

@@ -15,26 +15,24 @@
 </head>
 
 <body>
-       <div class="box1">
-                <header role="banner">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="header-elements">
-                                <h1 class="logo">Hobbeet</h1>
-                                <nav class="top-nav" role="navigation">
-                                    <button class="signout nav-link">Sign Out</button>
-                                </nav>
-                            </div>
-                        </div>
+    <div class="box1">
+        <header role="banner">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header-elements">
+                        <h1 class="logo">Hobbeet</h1>
                     </div>
-                </header>
-                 <main>
+                </div>
+            </div>
+        </header>
+        <main>
             <div class="intro">
                 <div class="row">
                     <div class="col-12">
                         <div class="center">
                             <a href="#" data-popup-open="entry-forms">
-                                <p class="start-btn">Start Here</a>
+                                <p class="start-btn">Start Here
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -52,14 +50,17 @@
                                             <form aria-live="assertive" role="form" class="js-register-form" action="post">
                                                 <fieldset>
                                                     <label for="inputName"></label>
-                                                    <input type="text" class="inputName input" placeholder="name" required />
-                                                    <br/>
+                                                    <input type="text" class="inputName input" placeholder="name"
+                                                        required />
+                                                    <br />
                                                     <label for="inputEmail"></label>
-                                                    <input type="text" class="inputEmail input" placeholder="email" onkeyup="lettersOnly(this)" required />
-                                                    <br/>
+                                                    <input type="text" class="inputEmail input" placeholder="email"
+                                                        onkeyup="lettersOnly(this)" required />
+                                                    <br />
                                                     <label for="inputPass"></label>
-                                                    <input type="password" class="inputPass input" placeholder="password (must be at least 10 characters)" onkeyup="lettersOnly(this)" required />
-                                                    <br/>
+                                                    <input type="password" class="inputPass input" placeholder="password (must be at least 10 characters)"
+                                                        onkeyup="lettersOnly(this)" required />
+                                                    <br />
                                                     <button type="submit" class="create-user-btn">Create</button>
                                                 </fieldset>
                                             </form>
@@ -68,13 +69,16 @@
                                             <form aria-live="assertive" role="form" class="js-login-form" action="post">
                                                 <fieldset>
                                                     <label for="email"></label>
-                                                    <input type="text" class="inputEmail input" placeholder="email" required/>
-                                                    <br/>
+                                                    <input type="text" class="inputEmail input" placeholder="email"
+                                                        required />
+                                                    <br />
                                                     <label for="inputPass"></label>
-                                                    <input type="password" class="inputPass input" placeholder="password" required />
-                                                    <br/>
+                                                    <input type="password" class="inputPass input" placeholder="password"
+                                                        required />
+                                                    <br />
                                                     <button type="submit" class="login-btn">log in</button>
-                                                    <p>Demo User: test@tes.com Password: testtest</p>
+                                                    <p>Demo User: test@test.com</p>
+                                                    <p> Password: testtest</p>
                                                 </fieldset>
                                             </form>
                                         </div>
@@ -89,39 +93,40 @@
             <div class="row">
                 <div class="col-12">
                     <div class="container">
-            <div class="categorySearch">
-                    <form aria-live="assertive" role="search" action="#" class="cat-search-form row" id="search-query-form">
-                        <label for="search-term"></label>
-                        <input type="text" placeholder="I've got my mind on" class="js-query" id="search-term" />
-                        <button type="submit" class="category-btn">Search</button>
-                    </form>
-                </div>
-                <div class="js-category-results"></div>
-            <div class="row">
-                <div class="steps-container">
-                    <div class="col-3">
-                        <div class="cont growNetwork">
-                            <img class="cont-img" src="" alt="" />
-                            <p class="cont-title"><b>Grow Your Network</b></p>
-                            <p class="cont-description">With SocialEyes, you can connect with people in the real world <em>doing</em> things rather than talking about them</p>
+                        <div class="categorySearch">
+                            <form aria-live="assertive" role="search" action="#" class="cat-search-form row" id="search-query-form">
+                                <label for="search-term"></label>
+                                <input type="text" placeholder="I've got my mind on" class="js-query" id="search-term" />
+                                <button type="submit" class="category-btn">Search</button>
+                            </form>
                         </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="cont meetupFly">
-                            <img class="cont-img" src="" alt="" />
-                            <p class="cont-title"><b>Spontaneity</b></p>
-                            <p class="cont-description">Find activities that fit <em>your</em> schedule and not the other way around.</p>
+                        <div class="js-category-results"></div>
+                        <div class="row">
+                            <div class="steps-container">
+                                <div class="col-3">
+                                    <div class="cont growNetwork">
+                                        <p class="cont-title"><b>Grow Your Network</b></p>
+                                        <p class="cont-description">With SocialEyes, you can connect with people in the
+                                            real world <em>doing</em> things rather than talking about them</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="cont meetupFly">
+                                        <p class="cont-title"><b>Spontaneity</b></p>
+                                        <p class="cont-description">Find activities that fit <em>your</em> schedule and
+                                            not the other way around.</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="cont noFomo">
+                                        <p class="cont-title"><b>No #fomo</b></p>
+                                        <p class="cont-description">This is more than social media, it's <em>socializing</em>
+                                            media! See what fun things are going on in your neck of the woods and join
+                                            in!</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="cont noFomo">
-                            <img class="cont-img" src="" alt="" />
-                            <p class="cont-title"><b>No #fomo</b></p>
-                            <p class="cont-description">This is more than social media, it's <em>socializing</em> media! See what fun things are going on in your neck of the woods and join in!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </main>
         <section id="box2" role="region">
             <footer role='contentinfo'>
@@ -129,7 +134,9 @@
                     <div class="col-12">
                         <div class="footercontent">
                             <div class="github-cont">
-                                <a class="github-link" href='https://github.com/JLinnell/' target='_blank'><img class="github-logo" src='https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png' alt="github logo"></a>
+                                <a class="github-link" href='https://github.com/JLinnell/' target='_blank'><img class="github-logo"
+                                        src='https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png'
+                                        alt="github logo"></a>
                             </div>
                             <div>
                                 <p class="capstone"> A Thinkful Fullstack Capstone by Judy Linnell | 2018</p>
@@ -139,11 +146,11 @@
                 </div>
             </footer>
         </section>
-      
+
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <script src="js/index.js"></script>
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+        <script src="js/index.js"></script>
 </body>
 
 </html>

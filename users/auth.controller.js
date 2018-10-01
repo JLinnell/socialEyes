@@ -89,7 +89,6 @@ exports.login = (req, res) => {
                 return;
             }
             //generate token and response if password matches
-            //NO PASSWORD! BAD IDEA!
             let userToken = {
                 email: user.email,
                 id: user._id

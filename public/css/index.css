@@ -296,7 +296,7 @@ label{
 }
 
 .popup-inner {
-    overflow-y: auto;
+    overflow: hidden;
     height: 90%;
     max-width: 500px;
     width: 90%;

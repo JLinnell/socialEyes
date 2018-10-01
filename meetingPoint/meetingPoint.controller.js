@@ -1,8 +1,8 @@
 const meetingPointModel = require('./meetingPoint.model');
-//deleted s from .model
+
 exports.createNew = (req, res) => {
 
-    //create new meeting point
+
     var newMeetingPoint = meetingPointModel({
         address: req.body.address,
         category: req.body.category,
@@ -10,8 +10,7 @@ exports.createNew = (req, res) => {
         title: req.body.title,
         userId: req.body.userId
     });
-    console.log("here I am!");
-    //save meeting point in database
+   
     newMeetingPoint.save()
         .then((result) => {
             res.status(200).json({
