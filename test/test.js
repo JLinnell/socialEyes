@@ -29,7 +29,7 @@ function tearDownDb() {
 
 describe('user', function () {
     before(function () {
-        return runServer('mongodb://admin:adminadmin1@ds117691.mlab.com:17691/hobbeettest');
+         runServer('mongodb://admin:adminadmin1ds117691.mlab.com:17691/hobbeettest');
     });
     after(function () {
         tearDownDb();
@@ -42,6 +42,7 @@ describe('user', function () {
             .then(res => {
                 userId = res.body.data._id;
                 expect(res).to.have.status(200);
+                done();
             })
             .catch((error) => {
                 console.log(error);
@@ -54,6 +55,7 @@ describe('user', function () {
             .then(res => {
                 token = res.body.data.token;
                 expect(res).to.have.status(200);
+                done();
             })
             .catch((error) => {
                 console.log(error);
@@ -62,7 +64,7 @@ describe('user', function () {
 });
 describe('meetingPoint', function () {
     before(function () {
-        return runServer();
+        return runServer('mongodb://admin:adminadmin1ds117691.mlab.com:17691/hobbeettest');
     });
     after(function () {
         tearDownDb();
@@ -74,7 +76,9 @@ describe('meetingPoint', function () {
             .get(`/meetingPoint/all/${token}`)
             .then(res => {
                 expect(res).to.have.status(200);
+                done();
             })
+            
             .catch((error) => {
                 console.log(error);
             });
