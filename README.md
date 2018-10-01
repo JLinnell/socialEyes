@@ -1,5 +1,5 @@
 # Hobbeet
-
+ Find friends and build your network based on your day to day hobbies and events.
 
 ---
 Demo the app [here](https://damp-cliffs-98520.herokuapp.com/)
@@ -25,13 +25,13 @@ Check-in delivered in response to  user query:
 
 ## Developed with:
 
-###Frontend
+### Frontend
 - Javascript
 - jQuery
 - HTML
 - CSS
 
-###Backend
+### Backend
 - Node.js
 - Express.js
 - MongoDB
