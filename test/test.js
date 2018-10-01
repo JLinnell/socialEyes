@@ -29,7 +29,7 @@ function tearDownDb() {
 
 describe('user', function () {
     before(function () {
-        return runServer();
+        return runServer('mongodb://admin:adminadmin1@ds117691.mlab.com:17691/hobbeettest');
     });
     after(function () {
         tearDownDb();
