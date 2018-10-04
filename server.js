@@ -14,16 +14,16 @@ app.use('/', express.static('public'));
 app.use('/meetingPoint', meetingPointRoutes);
 app.use('/users', usersRoutes);
 
+
 function runServer(db) {
-  const port = process.env.PORT || 1212;
 	return new Promise((resolve, reject) => {
 		mongoose
 			.connect(db, (err) => {
 				if (err) {
 					return reject(err);
 				}
-				server = app.listen(port, () => {
-					console.log(`App is listening on port ${port}`);
+				server = app.listen(1212, () => {
+					console.log(`App is listening on port ${1212}`);
 					resolve();
 				})
 				.on('error', (err) => {
