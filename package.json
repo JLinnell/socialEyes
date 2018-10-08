@@ -2,7 +2,7 @@
   "name": "hobbeet",
   "version": "1.0.0",
   "description": "",
-  "main": "\u001b[D\u001b[D\u001b[D\u001bserver.js)",
+  "main": "server.js",
   "scripts": {
     "test": "mocha --exit"
   },
