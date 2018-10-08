@@ -22,8 +22,8 @@ function runServer(db) {
 				if (err) {
 					return reject(err);
 				}
-				server = app.listen(1212, () => {
-					console.log(`App is listening on port ${1212}`);
+				server = app.listen(3000, () => {
+					console.log(`App is listening on port ${3000}`);
 					resolve();
 				})
 				.on('error', (err) => {
