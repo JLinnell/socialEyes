@@ -4,7 +4,7 @@
   "description": "",
   "main": "\u001b[D\u001b[D\u001b[D\u001bserver.js)",
   "scripts": {
-    "start": "node server.js"
+    "test": "mocha --exit"
   },
   "author": "",
   "license": "ISC",
