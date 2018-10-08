@@ -21,9 +21,10 @@ function runServer(db) {
 			.connect(db, (err) => {
 				if (err) {
 					return reject(err);
-				}
-				server = app.listen(3000, () => {
-					console.log(`App is listening on port ${3000}`);
+        }
+        const PORT = process.env.PORT || 3000;
+				server = app.listen(PORT, () => {
+					console.log(`App is listening on port ${PORT}`);
 					resolve();
 				})
 				.on('error', (err) => {
