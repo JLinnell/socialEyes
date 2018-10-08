@@ -43,12 +43,13 @@ header{
 }
 
 .logo{
-    margin-top: 8px;
+    margin-top: 1rem;
+    margin-left: 1rem;
     margin-bottom: 8px;
     color: #e4e712;
     font-size: 30px;
     font-family: 'Oxygen', sans-serif;
-        display: inline-block;
+    display: inline-block;
 }
 
 .top-nav {
