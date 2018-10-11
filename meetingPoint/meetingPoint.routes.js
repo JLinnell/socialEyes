@@ -11,5 +11,6 @@ router.get('/fetchAllByUser/:id/:token', middleware.verifyToken, meetingPointCon
 router.delete('/delete/:id', meetingPointController.deleteSelectedPoint);
 
 router.get('/findByCategory/:searchQueryText', meetingPointController.findByCategory);
+router.get('/findByLocation/:searchQueryText', meetingPointController.findByLocation);
 
 module.exports = router;

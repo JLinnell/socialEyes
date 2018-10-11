@@ -115,6 +115,9 @@ function categorySearch() {
                 if (response.data.length === 0) {
                     $(".js-category-results").append(renderNoResults());
                 }
+                if (response.data.length > 0) {
+                    $(".steps-container").hide();
+                }
                 toastr.success('You\'re on your way!')
                 for (let i = 0; i < response.data.length; i++) {
                     $(".js-category-results").append(renderCheckins(response.data[i]));
@@ -125,6 +128,35 @@ function categorySearch() {
 }
 
 categorySearch();
+
+function locationSearch() {
+    $('.location-btn').on('click', event => {
+        event.preventDefault();
+
+        $(".js-category-results").html('');
+
+        $.ajax({
+            type: "GET",
+            contentType: 'application/json',
+            url: `/meetingPoint/findByLocation/${$('.js-query-location').val()}`,
+        })
+            .done(function (response) {
+                if (response.data.length === 0) {
+                    $(".js-category-results").append(renderNoResults());
+                }
+                if (response.data.length > 0) {
+                    $(".steps-container").hide();
+                }
+                toastr.success('You\'re on your way!')
+                for (let i = 0; i < response.data.length; i++) {
+                    $(".js-category-results").append(renderCheckins(response.data[i]));
+                    $('.js-query-location').val("");
+                }
+            })
+    })
+}
+
+locationSearch();
 
 function renderNoResults() {
     return(`
@@ -140,8 +172,8 @@ function renderCheckins(checkin) {
     return (`
     <div class="meetingPointsList">
         <article class="results">
-        <a class="js-result-name" href="*" target="_blank"><span="description">${checkin.title}</span></a>
-        <a class="js-result-category" href="*" target="_blank"><span="description">${checkin.category}</span></a>
+        <span="description">${checkin.title}</span>
+        <a class="js-result-category" href="*"><span="description">${checkin.category}</span></a>
         <a class="js-result-description"><span="description">${checkin.description}</span></a></article>
     </div>`
     )

@@ -90,17 +90,19 @@ header{
      align-items: center;
     justify-content: center;
 }
-.category-btn {
+.category-btn, .location-btn {
     border: none;
     background: rgb(63, 204, 192);
     color: whitesmoke;
-    padding: 10px 30px;
+    padding: 10px 25px;
+    margin-left: 25px;
     border-radius: 7px;
     font-size: 1.4rem;
     outline: none;
     cursor: pointer;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
+
 .start-btn {
     border: none;
     padding: 10px 30px;
@@ -426,6 +428,7 @@ form input {
     width: 250px;
     padding: 10px;
     border-radius: 5px;
+    margin-bottom: 5px;
     border: 1px solid steelblue;
 }
 
@@ -441,6 +444,7 @@ form input {
 .results {
     font-size: 20px;
     margin: auto;
+    margin-bottom: 5px;
     padding: 1rem;
     background-color: rgb(236, 221, 202);
     width: 75%;
@@ -489,12 +493,7 @@ a {
 .results {
     width: 100%;
 }
-.js-query {
-    width: 100%;
-}
-.category-btn {
-    width: 100%;
-}
+
 .start-btn {
     width: 75%;
     text-align: center;

@@ -91,6 +91,23 @@ exports.findByCategory = (req, res) => {
         })
 }
 
+exports.findByLocation = (req, res) => {
+    console.log(req.params.searchQueryText);
+    meetingPointModel.find({title:  new RegExp(req.params.searchQueryText, "i")})
+        .then((meetingPoint) => {
+            res.status(200).json({
+                message: "Search query fetched successfully!",
+                data: meetingPoint
+            })
+        })
+        .catch((err) => {
+            res.status(500).json({
+                message: "Something happened!",
+                data: err
+            })
+        })
+}
+
 exports.fetchAllByUser = (req, res) => {
     meetingPointModel.find({userId: req.params.id})
         .then((meetingPoint) => {

@@ -63,8 +63,8 @@ function renderCheckins(checkIn) {
  <div class="checkIn-list">
  <article class="results">
  <button class="remove-checkIn" value="${checkIn._id}"><img src="../assets/delete.png" /></button>
-<a class="js-result-location" href="*" target="_blank"><span class="title">I am in ${checkIn.title}</span></a>
-<a class="js-result-category" href="*" target="_blank">And I am<span class="categoryLink"> ${checkIn.category}</span></a>
+<span class="title">I am in ${checkIn.title}</span>
+<a class="js-result-category" href="*">And I am<span class="categoryLink"> ${checkIn.category}</span></a>
 <a class="js-result-description"><span class="description">${checkIn.description}</span></a></article>
  </div>
  </br>`);
