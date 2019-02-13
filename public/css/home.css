@@ -73,14 +73,14 @@ header{
 
 .signout:hover{
     transform: translateY(-2px);
-    background-color: #E71353;
+    color: rgb(255, 76, 6);
     border: none;
 }
 
 .signout:active{
     transform: translateY(4px);
     transition: 0.1s ease;
-    outline-color: #E71353;
+    color: rgb(255, 76, 6);
     border: none;
 }
 /*--End of Header Styling--*/
