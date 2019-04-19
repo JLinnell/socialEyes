@@ -1,4 +1,4 @@
-# Hobbeet
+# SocialEyes
  Find friends and build your network based on your day to day hobbies and events.
 
 ---
