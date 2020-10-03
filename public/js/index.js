@@ -162,7 +162,6 @@ function renderNoResults() {
     return(`
         <div class="no-results">
         <article class="results">
-          <a><img class="cat-img" src="../assets/sadcat.jpg" alt="no results">
           <p>No results were found with your query, try again.</p></a></article>
         </div>
     `)
