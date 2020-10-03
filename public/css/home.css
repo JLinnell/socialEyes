@@ -105,7 +105,7 @@ fieldset {
 .box1{
     height: 100vh;
     width: 100%;
-    background-image: url("https://images.freecreatives.com/wp-content/uploads/2016/04/Bokeh-City-Lights-Wallpaper-.jpg");
+    background-image: url('C:/Users/JLinnell/Documents/projects/socialEyes/public/assets/landing.jpg');
     background-size: cover;
     display: table;
     background-attachment: fixed;
