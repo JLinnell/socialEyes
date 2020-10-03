@@ -189,7 +189,7 @@ h2 {
 .box1{
     height: 100vh;
     width: 100%;
-    background-image: '../public/assets/landing.jpg';
+    background-image: url('../assets/landing.jpg');
     background-size: cover;
     display: table;
     background-attachment: fixed;
