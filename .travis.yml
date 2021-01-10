@@ -4,6 +4,6 @@ deploy:
   provider: heroku
   api_key:
     secure: 4bd9dfb5-f229-46e4-add6-47543ea0d3bb
-  app: hidden-garden-63337
+  app: tranquil-peak-15081
   on:
     repo: JLinnell/socialEyes
