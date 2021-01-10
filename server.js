@@ -8,6 +8,11 @@ const usersRoutes = require('./users/users.routes.js')
 
 const app = express();
 
+mongoose.set('useUnifiedTopology', true);
+mongoose.set('useNewUrlParser', true);
+mongoose.set('useFindAndModify', false);
+mongoose.set('useCreateIndex', true);
+
 app.use(morgan('common'));
 app.use(bodyParser.json({urlencoded: true}));
 app.use('/', express.static('public'));

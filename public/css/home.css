@@ -54,7 +54,7 @@ header{
 
 .top-nav {
     margin-top: 9px;
-    float: right;
+    /* float: right; */
     display: inline-block;
 }
 
