@@ -74,10 +74,11 @@ function runServer(db) {
 
 
   if (require.main === module) {
-    runServer('mongodb+srv://JLinnell:Contras3na1@cluster0.vdrve.mongodb.net/Socialeyes?retryWrites=true&w=majority').catch((err) => {
+    runServer(' mongodb+srv://JLinnell:Contras3na1@cluster0.kruqx.mongodb.net/socialEyes?retryWrites=true&w=majority').catch((err) => {
       console.log(err);
   });
 
+ 
 
   };
   
