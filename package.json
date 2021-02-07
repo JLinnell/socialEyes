@@ -4,6 +4,7 @@
   "description": "Find friends and build your network based on your day to day hobbies and events.",
   "main": "server.js",
   "scripts": {
+    "start": "node index.js",
     "test": "mocha --exit"
   },
   "author": "",
