@@ -24,9 +24,10 @@ closeModal();
 
 
 //   T A B   F U N C T I O N A L I T Y   //
-$('.signup-tab').css('background', '#f0f8ff');
-$('.login-form').hide();
-$('.login-tab').css('background', '#bab3b3');
+$('.login-tab').css('background', '#f0f8ff');
+$('.register-form').hide();
+$('.signup-tab').css('background', '#bab3b3');
+
 
 $('.login-tab').click(event => {
     event.preventDefault();
